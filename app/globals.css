@@ -97,10 +97,12 @@
 }
 
 .hero-gradient {
+  width: 100%;
   background: radial-gradient(circle at top right, hsl(var(--primary)/0.15) 0%, transparent 60%);
 }
 
 .section-bg-gradient {
+  width: 100%;
   background: linear-gradient(to bottom, hsl(var(--background)) 0%, hsl(var(--muted)/0.3) 100%);
 }
 
