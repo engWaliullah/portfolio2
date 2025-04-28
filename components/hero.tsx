@@ -3,11 +3,12 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
     <section 
-      id="hero" 
+      id="her2o" 
       className="pt-32 pb-20 md:pt-40 md:pb-32 hero-gradient"
     >
       <div className="container px-4 mx-auto">
@@ -39,7 +40,7 @@ export default function Hero() {
             </div>
 
             <div className="flex gap-4">
-              <a 
+              <Link
                 href="https://github.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -47,8 +48,8 @@ export default function Hero() {
               >
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
-              </a>
-              <a 
+              </Link>
+              <Link
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -56,14 +57,14 @@ export default function Hero() {
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="mailto:contact@example.com" 
                 className="p-2 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
-              </a>
+              </Link>
             </div>
           </motion.div>
 

@@ -82,7 +82,7 @@ export default function Skills() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: j * 0.05 }}
                   >
-                    <Card className="p-6 rounded-xl text-center hover:bg-primary/5 transition-all duration-300 border-2 hover:border-primary/50 hover:scale-105 hover:shadow-lg hover:shadow-primary/20">
+                    <Card className="p-6 rounded text-center hover:bg-primary/5 transition-all duration-300 border-2 hover:border-primary/50 hover:scale-105 hover:shadow-lg hover:shadow-primary/20">
                       <div className="text-2xl mb-3">{skill.icon}</div>
                       <p className="font-medium">{skill.name}</p>
                     </Card>

@@ -12,6 +12,7 @@ import {
   TabsList, 
   TabsTrigger 
 } from '@/components/ui/tabs'
+import Link from 'next/link'
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState<string>("all")
@@ -119,22 +120,22 @@ export default function Projects() {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                    <a 
+                    <Link
                       href={project.demoLink} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/40 transition-colors duration-300"
                     >
                       <ExternalLink className="h-5 w-5 text-white" />
-                    </a>
-                    <a 
+                    </Link>
+                    <Link
                       href={project.githubLink} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/40 transition-colors duration-300"
                     >
                       <Github className="h-5 w-5 text-white" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <CardContent className="p-6">
