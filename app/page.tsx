@@ -5,14 +5,13 @@ import Skills from '@/components/skills';
 import Projects from '@/components/projects';
 import Services from '@/components/services';
 import Contact from '@/components/contact';
-import Hero2 from '@/components/hero2';
+
 
 export default function Home() {
   return (
     <>
-      {/* <div className="container mx-auto px-4 sm:px-6 lg:px-8">*/}
+
       <Hero />
-      <Hero2 />
       <About />
       <Experience />
       <Skills />
