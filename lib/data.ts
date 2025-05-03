@@ -20,48 +20,6 @@ export const developerData = {
     image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   };
   
-  // Experience Data
-  export const experienceData = [
-    {
-      id: 1,
-      company: "Tech Innovations Inc.",
-      position: "Senior MERN Stack Developer",
-      period: "2022 - Present",
-      description: "Leading development of enterprise web applications using the MERN stack. Managing team of 4 developers and implementing CI/CD pipelines to streamline deployment processes.",
-      responsibilities: [
-        "Developed and maintained scalable backend APIs using Node.js and Express",
-        "Implemented state management with Redux for complex frontend applications",
-        "Deployed applications using Docker and AWS services",
-        "Mentored junior developers and conducted code reviews",
-      ],
-    },
-    {
-      id: 2,
-      company: "Digital Solutions Ltd.",
-      position: "Full Stack Developer",
-      period: "2020 - 2022",
-      description: "Worked on multiple client projects developing full-stack web applications with React, Node.js, and MongoDB.",
-      responsibilities: [
-        "Built responsive front-end interfaces using React and Next.js",
-        "Designed and implemented RESTful APIs with Node.js and Express",
-        "Created and optimized MongoDB database schemas",
-        "Collaborated with UI/UX designers to implement pixel-perfect designs",
-      ],
-    },
-    {
-      id: 3,
-      company: "Web Wizards Agency",
-      position: "Frontend Developer",
-      period: "2018 - 2020",
-      description: "Specialized in creating responsive and interactive user interfaces for various client websites.",
-      responsibilities: [
-        "Developed client websites using HTML, CSS, and JavaScript",
-        "Implemented responsive designs for cross-device compatibility",
-        "Optimized website performance and SEO",
-        "Collaborated with designers to implement visual elements",
-      ],
-    },
-  ];
   
   // Skills Data
   export const skillsData = {

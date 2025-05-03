@@ -119,7 +119,7 @@ export default function Navbar() {
               </a>
             ))}
             <Button asChild className="w-full max-w-[200px]">
-              <a href="/resume.pdf" download onClick={() => setIsOpen(false)}>
+              <a href="/waliullah_resume.pdf" download onClick={() => setIsOpen(false)}>
                 Resume
               </a>
             </Button>
