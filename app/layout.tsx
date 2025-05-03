@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-       <link rel="icon" type="image/png" href="/favicon.jpg" />
+       <link rel="icon" type="image/png" href="/favicon.png" />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
