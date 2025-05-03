@@ -10,9 +10,10 @@ export default function Hero() {
     <section
       id="hero"
       className="min-h-screen flex items-center justify-center bg-background text-foreground relative"
+        // "pt-52 pb-20 md:pt-52 md:pb-32 hero-gradient
     >
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-      <div className="pt-32 pb-20 md:pt-52 md:pb-32 hero-gradient">
+      <div className="pt-32 pb-20 md:pt-52 md:pb-32 hero-gradien"> 
         <div className="container px-4 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             

@@ -1,35 +1,36 @@
 "use client"
 
-import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
-import { useTheme } from 'next-themes'
-import { Button } from '@/components/ui/button'
-import { ThemeToggle } from '@/components/theme-toggle'
-import { cn } from '@/lib/utils'
+import { useState, useEffect, useRef } from "react"
+import { Menu, X } from "lucide-react"
+import { useTheme } from "next-themes"
+import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
+import { cn } from "@/lib/utils"
+import { AnimatePresence, motion } from "framer-motion"
+import Link from "next/link"
 
 const links = [
-  { href: '#hero', label: 'Home' },
-  { href: '#about', label: 'About' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#services', label: 'Services' },
-  { href: '#contact', label: 'Contact' },
+  { href: "#hero", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
+  { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projects" },
+  { href: "#services", label: "Services" },
+  { href: "#contact", label: "Contact" },
 ]
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [activeSection, setActiveSection] = useState('hero')
+  const [activeSection, setActiveSection] = useState("hero")
   const { theme } = useTheme()
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10)
 
-      // Update active section based on scroll position
-      const sections = links.map(link => link.href.substring(1))
-      const current = sections.find(section => {
+      const sections = links.map((link) => link.href.substring(1))
+      const current = sections.find((section) => {
         const element = document.getElementById(section)
         if (element) {
           const rect = element.getBoundingClientRect()
@@ -42,23 +43,22 @@ export default function Navbar() {
       }
     }
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   return (
-    <header className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
-      scrolled 
-        ? "bg-background/80 backdrop-blur-md shadow-sm" 
-        : "bg-transparent"
-    )}>
+    <header
+      // className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4"
+    >
+      <div className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 bg-transparent",
+        scrolled ? "bg-background/90 md:backdrop-blur-md md:shadow-sm" : ""
+      )}>
+
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <a 
-            href="#hero" 
-            className="text-xl font-bold tracking-tight transition-colors"
-          >
+          <a href="#hero" className="text-xl font-bold tracking-tight transition-colors">
             <span className="text-primary">MERN</span>
             <span>Dev</span>
           </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
             {links.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
@@ -75,14 +75,14 @@ export default function Navbar() {
                 )}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <ThemeToggle />
             <Button asChild className="ml-4 relative overflow-hidden group">
-              <a href="/waliullah_resume.pdf" download>
+              <Link href="/waliullah_resume.pdf" download>
                 <span className="relative z-10">Resume</span>
                 <span className="absolute inset-0 bg-primary/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-              </a>
+              </Link>
             </Button>
           </nav>
 
@@ -92,40 +92,57 @@ export default function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle Menu"
+              onClick={() => setIsOpen(true)}
+              aria-label="Open Menu"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              <Menu size={24} />
             </Button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Navigation */}
-      {isOpen && (
-        <div className="fixed inset-0 top-16 z-40 bg-background md:hidden">
-          <nav className="flex flex-col items-center justify-center h-full gap-8 p-4">
-            {links.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  "nav-link text-lg font-medium transition-colors hover:text-primary",
-                  activeSection === link.href.substring(1) && "text-primary"
-                )}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
-            <Button asChild className="w-full max-w-[200px]">
-              <a href="/waliullah_resume.pdf" download onClick={() => setIsOpen(false)}>
-                Resume
-              </a>
-            </Button>
-          </nav>
-        </div>
-      )}
+      {/* Slide-in Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.aside
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="fixed top-0 right-0 h-full w-3/4 max-w-xs bg-background shadow-lg p-6 z-50 md:hidden"
+          >
+            <div className="flex justify-between items-center mb-6">
+              <Link href="#hero" className="text-lg font-semibold">
+                <span className="text-primary">MERN</span>Dev
+              </Link>
+              <button onClick={() => setIsOpen(false)} aria-label="Close Menu">
+                <X size={24} />
+              </button>
+            </div>
+            <nav className="flex flex-col space-y-4">
+              {links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={cn(
+                    "text-base font-medium transition-colors hover:text-primary",
+                    activeSection === link.href.substring(1) && "text-primary"
+                  )}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <Button asChild className="mt-6 w-full">
+                <Link href="/waliullah_resume.pdf" download onClick={() => setIsOpen(false)}>
+                  Resume
+                </Link>
+              </Button>
+            </nav>
+          </motion.aside>
+        )}
+      </AnimatePresence>
+      </div>
     </header>
   )
 }
