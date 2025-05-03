@@ -109,7 +109,7 @@ export default function Navbar() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="fixed top-0 right-0 h-full w-3/4 max-w-xs bg-background shadow-lg p-6 z-50 md:hidden"
+            className="fixed top-0 right-0 h-full w-3/4 max-w-[250px] bg-background shadow-lg p-6 z-50 md:hidden"
           >
             <div className="flex justify-between items-center mb-6">
               <Link href="#hero" className="text-lg font-semibold">
