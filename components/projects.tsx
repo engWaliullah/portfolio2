@@ -158,14 +158,14 @@ export default function Projects() {
           ))}
         </div>
 
-        <div className="text-center mt-16">
+        {/* <div className="text-center mt-16">
           <Button asChild variant="outline">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-4 w-4" />
               View More on GitHub
             </a>
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

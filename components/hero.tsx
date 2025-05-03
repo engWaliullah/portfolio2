@@ -41,7 +41,7 @@ export default function Hero() {
 
             <div className="flex gap-4">
               <Link
-                href="https://github.com" 
+                href="https://github.com/waliullah9099" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
@@ -50,7 +50,7 @@ export default function Hero() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://linkedin.com" 
+                href="https://linkedin.com/in/eng-waliullah" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
@@ -59,7 +59,7 @@ export default function Hero() {
                 <span className="sr-only">LinkedIn</span>
               </Link>
               <Link 
-                href="mailto:contact@example.com" 
+                href="mailto:waliullah9099@gmail.com" 
                 className="p-2 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 <Mail className="h-5 w-5" />

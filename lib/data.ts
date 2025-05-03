@@ -1,15 +1,14 @@
 export const developerData = {
-    name: "John Doe",
+    name: "MD Waliullah",
     title: "MERN Stack Developer",
-    email: "john.doe@example.com",
-    phone: "+1 (555) 123-4567",
+    email: "waliullah9099@gmail.com",
+    phone: "+8801518935317",
     location: "San Francisco, CA",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com",
+      github: "https://github.com/waliullah9099",
+      linkedin: "https://linkedin.com/in/eng-waliullah",
     },
-    resumeUrl: "/resume.pdf",
+    resumeUrl: "/waliullah_resume.pdf",
   };
   
   // About Data
