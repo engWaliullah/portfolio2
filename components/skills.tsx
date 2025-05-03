@@ -1,45 +1,49 @@
-"use client"
+"use client";
 
-import { motion } from 'framer-motion'
-import { Card } from '@/components/ui/card'
+import { motion } from "framer-motion";
+import { Card } from "@/components/ui/card";
+import assets from "@/public/assets";
 
 export default function Skills() {
   const skillCategories = [
     {
       title: "Frontend Development",
       skills: [
-        { name: "React", icon: "⚛️" },
-        { name: "Next.js", icon: "▲" },
-        { name: "TypeScript", icon: "TS" },
-        { name: "Tailwind CSS", icon: "🌊" },
-        { name: "JavaScript", icon: "JS" },
+        { name: "React", icon: assets.react },
+        { name: "Next.js", icon: assets.next },
+        { name: "TypeScript", icon: assets.ts },
+        { name: "Tailwind CSS", icon: assets.tail },
+        { name: "JavaScript", icon: assets.js },
         { name: "HTML/CSS", icon: "</>" },
-        { name: "Redux", icon: "⚡" },
-        { name: "Framer Motion", icon: "🎭" }
-      ]
+        { name: "Redux", icon: assets.react },
+        { name: "Framer Motion", icon: "🎭" },
+      ],
     },
     {
       title: "Backend Development",
       skills: [
-        { name: "Node.js", icon: "🟢" },
-        { name: "Express", icon: "🚂" },
-        { name: "MongoDB", icon: "🍃" },
-        { name: "PostgreSQL", icon: "🐘" },
-        { name: "NestJS", icon: "🐈" },
-        { name: "REST API", icon: "🔌" }
-      ]
+        { name: "TypeScript", icon: assets.ts },
+        { name: "JavaScript", icon: assets.js },
+        { name: "Node.js", icon: assets.ode },
+        { name: "Express", icon: assets.express },
+        { name: "MongoDB", icon: assets.mongogb },
+        { name: "Mongoose", icon: assets.mongoose },
+        // { name: "Postgres", icon: "🐈" },
+        { name: "Prisma", icon: "🐈" },
+        { name: "REST API", icon: assets.restApi },
+      ],
     },
     {
       title: "Tools & Other Skills",
       skills: [
         { name: "Git", icon: "🔄" },
-        { name: "CI/CD", icon: "🔄" },
-        { name: "Responsive Design", icon: "📱" },
-        { name: "Testing", icon: "🧪" },
-        { name: "Agile/Scrum", icon: "🔄" }
-      ]
-    }
-  ]
+        { name: "VS Code", icon: "🔄" },
+        { name: "Figma", icon: "📱" },
+        { name: "Jest/Vitest", icon: "🧪" },
+        { name: "Agile/Scrum", icon: "🔄" },
+      ],
+    },
+  ];
 
   return (
     <section id="skills" className="py-20 bg-muted/30">
@@ -82,9 +86,13 @@ export default function Skills() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: j * 0.05 }}
                   >
-                    <Card className="p-6 rounded text-center hover:bg-primary/5 transition-all duration-300 border-2 hover:border-primary/50 hover:scale-105 hover:shadow-lg hover:shadow-primary/20">
-                      <div className="text-2xl mb-3">{skill.icon}</div>
-                      <p className="font-medium">{skill.name}</p>
+                    <Card className="p-6 pt-0 rounded text-center hover:bg-primary/5 transition-all duration-300 border-2 hover:border-primary/50 hover:scale-105 hover:shadow-lg hover:shadow-primary/20 group">
+                      <div className="flex -translate-y-[1px] justify-center">
+                        <div className="w-3/4">
+                          <div className="h-[1px] group-hover:h-[2px] w-full bg-gradient-to-r from-transparent via-primary to-transparent group-hover:via-violet-700" />
+                        </div>
+                      </div>
+                      <p className="font-medium pt-6">{skill.name}</p>
                     </Card>
                   </motion.div>
                 ))}
@@ -94,5 +102,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }

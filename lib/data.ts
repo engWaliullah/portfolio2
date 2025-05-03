@@ -21,31 +21,6 @@ export const developerData = {
   };
   
   
-  // Skills Data
-  export const skillsData = {
-    frontend: [
-      { name: "HTML5", proficiency: 95 },
-      { name: "CSS3", proficiency: 90 },
-      { name: "JavaScript", proficiency: 95 },
-      { name: "TypeScript", proficiency: 85 },
-      { name: "React.js", proficiency: 90 },
-      { name: "Redux", proficiency: 85 },
-      { name: "Next.js", proficiency: 85 },
-    ],
-    backend: [
-      { name: "Node.js", proficiency: 85 },
-      { name: "Express.js", proficiency: 85 },
-      { name: "MongoDB", proficiency: 80 },
-      { name: "Mongoose", proficiency: 80 },
-      { name: "REST API", proficiency: 90 },
-    ],
-    other: [
-      { name: "Git", proficiency: 85 },
-      { name: "GitHub", proficiency: 85 },
-      { name: "Docker", proficiency: 70 },
-      { name: "AWS", proficiency: 65 },
-    ],
-  };
   
   // Projects Data
   export const projectsData = [
