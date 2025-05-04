@@ -10,7 +10,7 @@ interface WhatsAppLiveProps {
 }
 
 const WhatsAppLive = ({
-  phoneNumber = "01518935317",
+  phoneNumber = "+8801518935317",
   message = "Hello, How can I help you? Please message me",
 }: WhatsAppLiveProps) => {
   const [isVisible, setIsVisible] = useState(false);

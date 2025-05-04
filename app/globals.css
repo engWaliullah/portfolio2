@@ -74,7 +74,7 @@
 
 /* Custom styles */
 
-
+/* 
 .whatsapp-live {
   position: fixed;
   bottom: 80px;
@@ -97,7 +97,7 @@
   transform:  scale(1.2)
 }
 
-/* @media only screen and (max-width: 580px) {
+@media only screen and (max-width: 580px) {
   .whatsapp-live {
     position: fixed;
     bottom: -80px;
