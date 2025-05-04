@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ScrollToTop from '@/components/scroll-to-top';
+import WhatsapLive from '@/components/whatsapLive';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -32,7 +33,8 @@ export default function RootLayout({
             <Navbar />
             <main className="flex-1">{children}</main>
             <Footer />
-            <ScrollToTop />
+            {/* <ScrollToTop /> */}
+            <WhatsapLive />
           </div>
         </ThemeProvider>
       </body>
