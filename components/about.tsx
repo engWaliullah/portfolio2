@@ -73,10 +73,10 @@ export default function About() {
             <div className="relative">
               <div className="absolute inset-0 border-2 border-primary rounded-lg transform translate-x-4 translate-y-4"></div>
               <Image
-              src="https://i.ibb.co.com/B5mxRb7z/waliullah.jpg"
-              width={400}
-              height={400}
-               // src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://i.ibb.co.com/B5mxRb7z/waliullah.jpg"
+                width={400}
+                height={400}
+                // src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Developer working"
                 className="rounded-lg shadow-lg relative z-10 w-full h-[400px] object-cover"
               />
@@ -139,19 +139,12 @@ export default function About() {
                     {item.description}
                   </p>
                 </CardContent>
-                <div className="w-70 h-70 border-2 rounded-full flex items-center justify-center absolute -top-[134px] -right-[131px] h">
-                  <div className="w-[280px] h-[280px] border-2 shadow-md rounded-full hidden group-hover:flex items-center justify-center transition-all duration-500">
-                    <div className="w-[240px] h-[240px] border-2 shadow-md rounded-full flex items-center justify-center">
-                      <div className="w-[200px] h-[200px] border-2 shadow-md rounded-full flex items-center justify-center">
-                        <div className="w-[160px] h-[160px] border-2 shadow-md rounded-full flex items-center justify-center">
-                          <div className="w-[120px] h-[120px] border-2 shadow-md rounded-full flex items-center justify-center">
-                            <div className="w-[80px] h-[80px] border-2 shadow-md rounded-full flex items-center justify-center">
-                              <div className="w-[40px] h-[40px] border-2 shadow-md rounded-full" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="absolute top-36 right-32 pointer-events-none transition-all duration-500 ease-in-out opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100">
+                  <div className="relative w-[536px] h-[536px] opacity-40">
+                    <div className="absolute w-[488px] h-[488px] left-[48px] top-0 rounded-full bg-[#FF885B] opacity-20 transition-all duration-500" />
+                    <div className="absolute w-[488px] h-[488px] left-[32px] top-[16px] rounded-full bg-[#FF885B] opacity-20 transition-all duration-500" />
+                    <div className="absolute w-[488px] h-[488px] left-[16px] top-[32px] rounded-full bg-[#FF885B] opacity-20 transition-all duration-500" />
+                    <div className="absolute w-[488px] h-[488px] left-0 top-[48px] rounded-full bg-[#FF885B] opacity-20 transition-all duration-500" />
                   </div>
                 </div>
               </Card>
@@ -162,4 +155,3 @@ export default function About() {
     </section>
   );
 }
-

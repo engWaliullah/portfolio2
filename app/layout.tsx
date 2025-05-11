@@ -4,8 +4,9 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
-import ScrollToTop from '@/components/scroll-to-top';
+
 import WhatsapLive from '@/components/whatsapLive';
+import ScrollToTop from '@/components/scroll-to-top';
 
 const inter = Inter({ subsets: ['latin'] });
 
