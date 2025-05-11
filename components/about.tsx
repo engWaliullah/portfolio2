@@ -139,12 +139,12 @@ export default function About() {
                     {item.description}
                   </p>
                 </CardContent>
-                <div className="absolute top-36 right-32 pointer-events-none transition-all duration-500 ease-in-out opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100">
+                <div className="absolute top-12 right-32 pointer-events-none transition-all duration-500 ease-in-out opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100">
                   <div className="relative w-[536px] h-[536px] opacity-40">
-                    <div className="absolute w-[488px] h-[488px] left-[48px] top-0 rounded-full bg-[#FF885B] opacity-20 transition-all duration-500" />
-                    <div className="absolute w-[488px] h-[488px] left-[32px] top-[16px] rounded-full bg-[#FF885B] opacity-20 transition-all duration-500" />
-                    <div className="absolute w-[488px] h-[488px] left-[16px] top-[32px] rounded-full bg-[#FF885B] opacity-20 transition-all duration-500" />
-                    <div className="absolute w-[488px] h-[488px] left-0 top-[48px] rounded-full bg-[#FF885B] opacity-20 transition-all duration-500" />
+                    <div className="absolute w-[488px] h-[488px] left-[48px] top-0 rounded-full bg-blue-500 opacity-20 transition-all duration-500" />
+                    <div className="absolute w-[488px] h-[488px] left-[32px] top-[16px] rounded-full bg-blue-500 opacity-20 transition-all duration-500" />
+                    <div className="absolute w-[488px] h-[488px] left-[16px] top-[32px] rounded-full bg-blue-500 opacity-20 transition-all duration-500" />
+                    <div className="absolute w-[488px] h-[488px] left-0 top-[48px] rounded-full bg-blue-500 opacity-20 transition-all duration-500" />
                   </div>
                 </div>
               </Card>
