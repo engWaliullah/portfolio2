@@ -26,7 +26,8 @@ export default function Hero() {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
                 <span className="block">Hi, I'm</span>
                 <span className="text-primary block mt-2">
-                  Jr. Software Engineer
+                  {/* Jr. Software Engineer */}
+                  Backend Developer
                 </span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-xl">
@@ -114,7 +115,8 @@ export default function Hero() {
               </div>
               <div className="absolute -bottom-4 -right-4 p-4">
           <div className="bg-secondary/80 text-secondary-foreground px-7 py-2.5 rounded-full text-sm font-medium border border-transparent hover:animate-border-animation">
-            Backend Developer
+            {/* Backend Developer */}
+            Jr. Software Engineer
         </div>
               </div>
             </motion.div>

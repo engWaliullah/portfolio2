@@ -14,6 +14,11 @@ export default function Skills() {
         { name: "Golang", icon: assets.ts },
         { name: "TypeScript", icon: assets.ts },
         { name: "JavaScript", icon: assets.js },
+        { name: "REST API", icon: assets.restApi },
+        { name: "Git", icon: "🔄" },
+        { name: "Github", icon: "🔄" },
+        { name: "VS Code", icon: "🔄" },
+        { name: "Postman", icon: assets.restApi },
         // { name: "Tailwind CSS", icon: assets.tail },
         // { name: "HTML/CSS", icon: "</>" },
         // { name: "Redux", icon: assets.react },
@@ -34,18 +39,18 @@ export default function Skills() {
     //     { name: "REST API", icon: assets.restApi },
     //   ],
     // },
-    {
-      title: "Tools & Other Skills",
-      skills: [
-        { name: "Git", icon: "🔄" },
-        { name: "VS Code", icon: "🔄" },
-        { name: "Postman", icon: assets.restApi },
-        { name: "REST API", icon: assets.restApi }
-        // { name: "Figma", icon: "📱" },
-        // { name: "Jest/Vitest", icon: "🧪" },
-        // { name: "Agile/Scrum", icon: "🔄" },
-      ],
-    },
+    // {
+    //   title: "Tools & Other Skills",
+    //   skills: [
+    //     { name: "Git", icon: "🔄" },
+    //     { name: "VS Code", icon: "🔄" },
+    //     { name: "Postman", icon: assets.restApi },
+    //     { name: "REST API", icon: assets.restApi },
+    //     { name: "Figma", icon: "📱" },
+    //     { name: "Jest/Vitest", icon: "🧪" },
+    //     { name: "Agile/Scrum", icon: "🔄" },
+    //   ],
+    // },
   ];
 
   return (
