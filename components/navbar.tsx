@@ -59,8 +59,8 @@ export default function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <a href="#hero" className="text-xl font-bold tracking-tight transition-colors">
-            <span className="text-primary">MERN</span>
-            <span>Dev</span>
+            <span className="text-primary">WALIULLAH</span>
+            {/* <span>Dev</span> */}
           </a>
 
           {/* Desktop Navigation */}
@@ -87,7 +87,7 @@ export default function Navbar() {
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="flex md:hidden items-center gap-2">
+          <div className="flex md:hidden items-center gap-2">zz
             <ThemeToggle />
             <Button
               variant="ghost"
@@ -113,7 +113,7 @@ export default function Navbar() {
           >
             <div className="flex justify-between items-center mb-6">
               <Link href="#hero" className="text-lg font-semibold">
-                <span className="text-primary">MERN</span>Dev
+                <span className="text-primary">WALIULLAH</span>
               </Link>
               <button onClick={() => setIsOpen(false)} aria-label="Close Menu">
                 <X size={24} />

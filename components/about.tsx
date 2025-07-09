@@ -55,11 +55,9 @@ export default function About() {
         >
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
-            I'm a passionate MERN stack developer with a strong foundation in
-            web technologies. I enjoy building scalable web applications and
-            solving complex problems with clean, efficient code.
-          </p>
+          {/* <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
+            I've been focusing on developing RESTful APIs, backend services, and learning Go's powerful features like concurrency and memory efficiency. I'm eager to contribute to impactful backend systems and continue growing backend engineer.
+          </p> */}
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -92,15 +90,10 @@ export default function About() {
           >
             <h3 className="text-2xl font-bold mb-4">My Journey</h3>
             <p className="mb-4 text-muted-foreground">
-              I started my journey as a web developer with a curiosity for
-              creating interactive websites. This led me to explore the MERN
-              stack, where I found my passion for building full-stack
-              applications.
+              I'm a passionate MERN stack developer transitioning into backend development with Go (Golang). With a strong foundation in JavaScript, React.js, and Node.js, I enjoy building scalable, high-performance web applications and solving complex problems through clean, maintainable code. 
             </p>
             <p className="mb-6 text-muted-foreground">
-              With experience in various projects, I've developed a strong
-              understanding of modern web development practices and a knack for
-              creating clean, efficient, and scalable solutions.
+              Recently, I've been focusing on developing RESTful APIs, backend services, and learning Go's powerful features like concurrency and memory efficiency. I'm eager to contribute to impactful backend systems and continue growing as a full-stack engineer with a backend-first mindset.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="px-4 py-2 bg-primary/10 rounded-full text-sm font-medium">

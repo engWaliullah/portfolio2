@@ -18,50 +18,51 @@ export default function Projects() {
   const [activeTab, setActiveTab] = useState<string>("all")
   
   const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform with product listings, cart functionality, payment integration, and user authentication.",
-      image: "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      tags: ["React", "Node.js", "MongoDB", "Express"],
-      category: "fullstack",
-      demoLink: "#",
-      githubLink: "#"
-    },
-    {
-      title: "Task Management App",
-      description: "A productivity app for managing tasks with features like drag-and-drop, filtering, and team collaboration.",
-      image: "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      tags: ["React", "Redux", "Node.js", "Express", "MongoDB"],
-      category: "fullstack",
-      demoLink: "#",
-      githubLink: "#"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A weather dashboard showing current conditions and forecasts using data from a weather API.",
-      image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      tags: ["React", "API Integration", "Chart.js"],
-      category: "frontend",
-      demoLink: "#",
-      githubLink: "#"
-    },
-    {
-      title: "Blog Platform",
-      description: "A content management system for creating and publishing blog posts with user authentication.",
-      image: "https://images.pexels.com/photos/261579/pexels-photo-261579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      tags: ["React", "Node.js", "Express", "MongoDB"],
-      category: "fullstack",
-      demoLink: "#",
-      githubLink: "#"
-    },
+    // {
+    //   title: "Task Management App",
+    //   description: "A productivity app for managing tasks with features like drag-and-drop, filtering, and team collaboration.",
+    //   image: "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    //   tags: ["React", "Redux", "Node.js", "Express", "MongoDB"],
+    //   category: "fullstack",
+    //   demoLink: "#",
+    //   githubLink: "#"
+    // },
+    // {
+    //   title: "Weather Dashboard",
+    //   description: "A weather dashboard showing current conditions and forecasts using data from a weather API.",
+    //   image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    //   tags: ["React", "API Integration", "Chart.js"],
+    //   category: "frontend",
+    //   demoLink: "#",
+    //   githubLink: "#"
+    // },
+    // {
+    //   title: "Blog Platform",
+    //   description: "A content management system for creating and publishing blog posts with user authentication.",
+    //   image: "https://images.pexels.com/photos/261579/pexels-photo-261579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    //   tags: ["React", "Node.js", "Express", "MongoDB"],
+    //   category: "fullstack",
+    //   demoLink: "#",
+    //   githubLink: "#"
+    // },
     {
       title: "RESTful API Service",
       description: "A backend service providing RESTful APIs for a mobile application with authentication and data validation.",
       image: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      tags: ["Node.js", "Express", "MongoDB", "JWT"],
+      tags: ["Typescript", "Express", "MongoDB", "JWT"],
       category: "backend",
-      demoLink: "#",
-      githubLink: "#"
+      demoLink: "https://github.com/engWaliullah/University_Management",
+      githubLink: "#https://github.com/engWaliullah/University_Management"
+    },
+    {
+      title: "Real Estate Project",
+      description: "A full-featured Real Estate Project with product listings, cart functionality, payment integration, and user authentication.",
+      image: "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      tags: ["Typescript", "Next.js", "Express.js", "MongoDB"],
+      category: "fullstack",
+      demoLink: "https://real-state-client-peach.vercel.app",
+      githubLink: "https://github.com/engWaliullah/real-state-project-client",
+      backend: "https://github.com/engWaliullah/real-state-backend"
     },
     {
       title: "Portfolio Website",
@@ -69,8 +70,8 @@ export default function Projects() {
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       tags: ["React", "Next.js", "Tailwind CSS"],
       category: "frontend",
-      demoLink: "#",
-      githubLink: "#"
+      demoLink: "https://dev-waliullah.vercel.app/",
+      githubLink: "https://github.com/engWaliullah/portfolio2"
     }
   ]
 

@@ -15,12 +15,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Services() {
   const services = [
-    {
-      icon: <Layout className="h-10 w-10 text-primary" />,
-      title: "Frontend Development",
-      description:
-        "Building responsive, interactive user interfaces using React.js, Next.js, and modern CSS frameworks.",
-    },
+    // {
+    //   icon: <Layout className="h-10 w-10 text-primary" />,
+    //   title: "Frontend Development",
+    //   description:
+    //     "Building responsive, interactive user interfaces using React.js, Next.js, and modern CSS frameworks.",
+    // },
     {
       icon: <Server className="h-10 w-10 text-primary" />,
       title: "Backend Development",
@@ -39,18 +39,18 @@ export default function Services() {
       description:
         "End-to-end application development from frontend to backend using the complete MERN stack.",
     },
-    {
-      icon: <Smartphone className="h-10 w-10 text-primary" />,
-      title: "Responsive Web Design",
-      description:
-        "Creating websites that work seamlessly across all devices and screen sizes.",
-    },
-    {
-      icon: <Search className="h-10 w-10 text-primary" />,
-      title: "Performance Optimization",
-      description:
-        "Improving application speed and efficiency through code optimization and best practices.",
-    },
+    // {
+    //   icon: <Smartphone className="h-10 w-10 text-primary" />,
+    //   title: "Responsive Web Design",
+    //   description:
+    //     "Creating websites that work seamlessly across all devices and screen sizes.",
+    // },
+    // {
+    //   icon: <Search className="h-10 w-10 text-primary" />,
+    //   title: "Performance Optimization",
+    //   description:
+    //     "Improving application speed and efficiency through code optimization and best practices.",
+    // },
   ];
 
   const cardVariants = {

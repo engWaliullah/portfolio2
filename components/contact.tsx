@@ -134,7 +134,7 @@ export default function Contact() {
             <h3 className="text-2xl font-bold mb-6 md:mt-16">Follow Me</h3>
             <div className="flex gap-4">
               <Link
-                href="https://github.com/waliullah9099"
+                href="https://github.com/engWaliullah"
                 className="p-3 bg-secondary hover:bg-primary hover:text-primary-foreground rounded-full transition-colors duration-300"
                 aria-label="GitHub"
               >
@@ -151,7 +151,7 @@ export default function Contact() {
                 </svg>
               </Link>
               <Link
-                href="https://www.linkedin.com/in/eng-waliullah"
+                href="https://www.linkedin.com/in/engwaliullah"
                 className="p-3 bg-secondary hover:bg-primary hover:text-primary-foreground rounded-full transition-colors duration-300"
                 aria-label="LinkedIn"
               >
@@ -187,7 +187,7 @@ export default function Contact() {
                 </svg>
               </Link>
               <Link
-                href="https://www.facebook.com/eng.waliullah"
+                href="https://www.facebook.com/dev.waliullah"
                 className="p-3 bg-secondary hover:bg-primary hover:text-primary-foreground rounded-full transition-colors duration-300"
                 aria-label="Facebook"
               >

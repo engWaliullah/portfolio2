@@ -26,13 +26,11 @@ export default function Hero() {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
                 <span className="block">Hi, I'm</span>
                 <span className="text-primary block mt-2">
-                  MERN Stack Developer
+                  Jr. Software Engineer
                 </span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-xl">
-                I build responsive, scalable web applications using MongoDB,
-                Express, React, and Node.js. Transforming ideas into elegant,
-                functional solutions.
+                I've been focusing on developing RESTful APIs, backend services, and learning Go's powerful features like concurrency and memory efficiency. I'm eager to contribute to impactful backend systems and continue growing backend engineer.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-8">
@@ -58,7 +56,7 @@ export default function Hero() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    href="https://github.com/waliullah9099"
+                    href="https://github.com/engWaliullah"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 inline-flex items-center justify-center rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-200"
@@ -73,7 +71,7 @@ export default function Hero() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    href="https://linkedin.com/in/eng-waliullah"
+                    href="https://linkedin.com/in/engwaliullah"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 inline-flex items-center justify-center rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-200"
@@ -116,7 +114,7 @@ export default function Hero() {
               </div>
               <div className="absolute -bottom-4 -right-4 p-4">
           <div className="bg-secondary/80 text-secondary-foreground px-7 py-2.5 rounded-full text-sm font-medium border border-transparent hover:animate-border-animation">
-            Full-Stack Developer
+            Backend Developer
         </div>
               </div>
             </motion.div>
