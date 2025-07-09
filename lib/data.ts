@@ -8,7 +8,7 @@ export const developerData = {
       github: "https://github.com/waliullah9099",
       linkedin: "https://linkedin.com/in/eng-waliullah",
     },
-    resumeUrl: "/waliullah_resume.pdf",
+    resumeUrl: "/waliullah.pdf",
   };
   
   // About Data

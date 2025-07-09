@@ -79,7 +79,7 @@ export default function Navbar() {
             ))}
             <ThemeToggle />
             <Button asChild className="ml-4 relative overflow-hidden group">
-              <Link href="/waliullah_resume.pdf" download>
+              <Link href="/waliullah.pdf" download>
                 <span className="relative z-10">Resume</span>
                 <span className="absolute inset-0 bg-primary/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
               </Link>
@@ -134,7 +134,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <Button asChild className="mt-6 w-full">
-                <Link href="/waliullah_resume.pdf" download onClick={() => setIsOpen(false)}>
+                <Link href="/waliullah.pdf" download onClick={() => setIsOpen(false)}>
                   Resume
                 </Link>
               </Button>
